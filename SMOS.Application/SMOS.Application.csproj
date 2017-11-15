@@ -1082,6 +1082,7 @@
     <Content Include="Scripts\Angular\angular.min.js" />
     <Content Include="Scripts\app.js" />
     <None Include="Properties\PublishProfiles\BalancaApp.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
