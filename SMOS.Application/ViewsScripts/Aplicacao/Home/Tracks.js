@@ -6,8 +6,8 @@
         ShowOverlay();
         $http.get('Auth/ValidaToken').then(function (response) {
             if (response.data == false) {
-                HideOverlay();
                 window.location = "/#/Auth";
+                HideOverlay();
             } else {
                 $scope.getTracks();
             }

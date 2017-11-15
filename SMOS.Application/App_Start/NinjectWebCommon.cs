@@ -66,7 +66,7 @@ namespace SMOS.Application.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             //It would be great to get these values from some confi, but cannot access web.config from here
-            string uriCallback = "http://localhost:58374/Profile";
+            string uriCallback = "http://fcarvalho-001-site3.etempurl.com/Profile";
             string clientId = "03d9d514d28e422c816368761c6194f5";
 
             kernel.Bind(typeof(ISpotifyApi)).To(typeof(SpotifyApi));
