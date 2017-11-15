@@ -1,0 +1,84 @@
+﻿<div ng-app="app">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="index2.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>A</b>LT</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><small><i class="fa fa-fw fa-users"></i></small> <b>SMOS</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="header">NAVEGAÇÃO</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-circle-o"></i>
+                            <span>Home</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/#/Playlist"><i class="fa fa-indent"></i> Playlist</a></li>
+                            <li><a href="/#/Tracks"><i class="fa fa-music"></i>Tracks</a></li>
+                            <li><a href="/#/SortPlayList"><i class="fa fa-sort-amount-desc"></i>SortPlayList</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="box box-danger box-solid">
+                            <div class="box-header">
+                                <h3 class="box-title">Loading...</h3>
+                            </div>
+                            <div class="box-body">
+                                The content is being rendered.
+                            </div>
+                            <div class="overlay">
+                                <i class="fa fa-refresh fa-spin"></i>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper"> 
+            <ng-view>
+
+            </ng-view>
+        </div>
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0.0
+            </div>
+            <strong>Copyright &copy; 2017 <a href="http://fcarvalho.org">Fábio Carvalho</a>.</strong> All rights
+            reserved.
+        </footer>
+
+    </div>
+</div>
+
+<script>
+    function ShowOverlay() {
+        $('.modal').modal('show');
+    }
+    function HideOverlay() {
+        $('.modal').modal('hide');
+    }
+</script>

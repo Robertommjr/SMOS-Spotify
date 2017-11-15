@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    .btn-spotify {
+        background-color: #19c441;
+        color: white;
+    }
+
+        .btn-spotify:hover {
+            background-color: #1cb110;
+            color: white;
+        }
+</style>
+<div>
+    <section class="content">
+        <div class="row">
+            <div class="login-box">
+                <div class="login-box-body">
+                    <p class="login-box-msg">Sign in not avaliable</p>
+                    <form action="../../index2.html" method="post">
+                        <div class="form-group has-feedback">
+                            <input type="email" disabled="disabled" class="form-control" placeholder="Email">
+                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="password" disabled="disabled" class="form-control" placeholder="Password">
+                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        </div>
+                        <div class="row">
+                            <!-- /.col -->
+                            <div class="col-xs-4">
+                                <button type="submit" disabled="disabled" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </form>
+                    <div class="social-auth-links text-center">
+                        <p>- Try it with -</p>
+                        <a href=@ViewBag.AuthUri class="btn btn-block btn-social btn-spotify btn-flat">
+                            <i class="fa fa-spotify"></i> Sign in using
+                            Spotify
+                        </a>
+                    </div>
+                </div>
+                <!-- /.login-box-body -->
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<div><section class="content-header">
+    <h1>
+        Smart Manager OS
+        <small>your private manager for all solutions</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Playlist</li>
+    </ol>
+</section>
+    <section class="content" ng-init="validaToken()">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Your Playlists</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 10px">#</th>
+                                    <th>Playlist Name</th>
+                                </tr>
+                                <tr ng-repeat="l in PlayList">
+                                    <td>{{l.Id}}</td>
+                                    <td>{{l.Name}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,35 @@
+﻿@*Admin LTE based template*@
+@*https://adminlte.io/*@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <title>Smart Management</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        @Styles.Render("~/Content/templateCSS")
+        @Styles.Render("~/Content/slidercss")
+        @Styles.Render("~/Content/alertacss")
+        @Scripts.Render("~/bundles/jquery")
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini">
+        @RenderBody()
+
+        @RenderSection("scripts", required: false)
+
+        @Scripts.Render("~/bundles/templateJS")
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/Scripts/app.js")
+        @Scripts.Render("~/bundles/alertajs")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Profile/Profile.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Home/SortPlayList.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Home/Sobre.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Auth/AuthCtrl.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Home/Playlist.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Home/Welcome.js")
+        @Scripts.Render("~/ViewsScripts/Aplicacao/Home/Tracks.js")
+    </body>
+</html>
